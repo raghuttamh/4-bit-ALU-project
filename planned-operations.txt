@@ -1,0 +1,5 @@
+Planned Operations that the ALU must be prepared to perform:
+1. Adding 2 numbers
+2. Subtraction
+3. Complementing
+4. AND, OR, NOT
