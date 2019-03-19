@@ -1,0 +1,7 @@
+4-bit-Full-Adder
+
+IC: 7483
+Datasheet link: http://www.ece.sunysb.edu/~dima/74ls83a.pdf
+
+
+

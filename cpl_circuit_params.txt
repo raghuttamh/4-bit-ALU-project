@@ -1,0 +1,9 @@
+Complementing:
+
+IC: 7404
+Inputs=06
+Outputs=06
+
+Used:
+Subtraction:
+Logic = One part to generate 0001B when the SUBB is high and add it to One's complement obtained from the complement circuit, which must be used as an operand when SUBB opcode is selected
