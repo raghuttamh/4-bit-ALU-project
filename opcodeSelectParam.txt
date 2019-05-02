@@ -1,0 +1,15 @@
+DeMux used:
+74138 IC
+
+keeping E3,E2,E1 - 1, 0, 0
+and the A0,A1,A2 will be the deciding factor
+
+
+A0	|	A1	|	A3	|	Operation
+0	|	0	|	0	|	ADDITION
+0	|	0	|	1	|	SUBTRACTION
+0	|	1	|	0	|	COMPLEMENT
+0	|	1	|	1	|	AND
+1	|	0	|	0	|	OR
+1	|	0	|	1	|	XOR
+
