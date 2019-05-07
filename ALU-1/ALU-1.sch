@@ -1,0 +1,351 @@
+EESchema Schematic File Version 4
+LIBS:ALU-1-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 74xx:74LS83 FullAdder
+U 1 1 5CD022E9
+P 5700 2700
+F 0 "FullAdder" H 5700 3681 50  0000 C CNN
+F 1 "74LS83" H 5700 3590 50  0000 C CNN
+F 2 "" H 5700 2700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS83" H 5700 2700 50  0001 C CNN
+	1    5700 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS138 OpcodeSelectDeMux
+U 1 1 5CD05749
+P 2100 6000
+F 0 "OpcodeSelectDeMux" H 2100 6781 50  0000 C CNN
+F 1 "74LS138" H 2100 6690 50  0000 C CNN
+F 2 "" H 2100 6000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS138" H 2100 6000 50  0001 C CNN
+	1    2100 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 5CD03595
+P 6550 7600
+F 0 "#PWR?" H 6550 7350 50  0001 C CNN
+F 1 "Earth" H 6550 7450 50  0001 C CNN
+F 2 "" H 6550 7600 50  0001 C CNN
+F 3 "~" H 6550 7600 50  0001 C CNN
+	1    6550 7600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 5450 2100 5400
+Wire Wire Line
+	2100 6700 2100 7600
+Wire Wire Line
+	1600 6300 1600 6400
+Wire Wire Line
+	1600 7600 2100 7600
+Connection ~ 1600 6400
+Wire Wire Line
+	1600 6400 1600 7600
+Connection ~ 2100 7600
+$Comp
+L Connector:Conn_01x04_Male DataA
+U 1 1 5CD0D6AF
+P 1100 3050
+F 0 "DataA" H 1072 2932 50  0000 R CNN
+F 1 "Conn_01x04_Male" H 1072 3023 50  0000 R CNN
+F 2 "" H 1100 3050 50  0001 C CNN
+F 3 "~" H 1100 3050 50  0001 C CNN
+	1    1100 3050
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male DataB
+U 1 1 5CD0E301
+P 1300 3800
+F 0 "DataB" H 1272 3774 50  0000 R CNN
+F 1 "Conn_01x04_Male" H 1272 3683 50  0000 R CNN
+F 2 "" H 1300 3800 50  0001 C CNN
+F 3 "~" H 1300 3800 50  0001 C CNN
+	1    1300 3800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 3150 2200 3150
+Wire Wire Line
+	2500 3150 2500 2850
+Wire Wire Line
+	2400 2750 2400 3050
+Wire Wire Line
+	2400 3050 1300 3050
+Wire Wire Line
+	1300 2950 2300 2950
+Wire Wire Line
+	2300 2950 2300 2650
+Wire Wire Line
+	1300 2850 2200 2850
+Wire Wire Line
+	2200 2850 2200 2550
+Wire Wire Line
+	750  700  750  750 
+Wire Wire Line
+	750  5450 2100 5450
+Connection ~ 750  5450
+Wire Wire Line
+	750  6200 1600 6200
+Wire Wire Line
+	750  5450 750  6200
+Connection ~ 750  750 
+Wire Wire Line
+	750  750  750  5450
+Wire Wire Line
+	1100 4000 600  4000
+Wire Wire Line
+	600  4000 600  2050
+Wire Wire Line
+	700  3900 1100 3900
+Wire Wire Line
+	700  2150 700  3900
+Wire Wire Line
+	800  2250 800  3800
+Wire Wire Line
+	2100 7600 6550 7600
+Wire Wire Line
+	850  3700 1100 3700
+Wire Wire Line
+	800  3800 1100 3800
+Wire Wire Line
+	850  2350 850  3700
+$Comp
+L Connector:Conn_01x04_Female J?
+U 1 1 5CD3A561
+P 10700 1300
+F 0 "J?" H 10728 1276 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 10728 1185 50  0000 L CNN
+F 2 "" H 10700 1300 50  0001 C CNN
+F 3 "~" H 10700 1300 50  0001 C CNN
+	1    10700 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 750  5700 1900
+Wire Wire Line
+	5050 2050 5050 2400
+Wire Wire Line
+	5050 2400 5200 2400
+Wire Wire Line
+	600  2050 5050 2050
+Wire Wire Line
+	5200 2500 4950 2500
+Wire Wire Line
+	4950 2500 4950 2150
+Wire Wire Line
+	700  2150 4950 2150
+Wire Wire Line
+	4850 2250 4850 2600
+Wire Wire Line
+	4850 2600 5200 2600
+Wire Wire Line
+	800  2250 4850 2250
+Wire Wire Line
+	5200 2700 4750 2700
+Wire Wire Line
+	850  2350 4750 2350
+Wire Wire Line
+	4750 2350 4750 2700
+Wire Wire Line
+	4600 2550 4600 2900
+Wire Wire Line
+	4600 2900 5200 2900
+Wire Wire Line
+	2200 2550 3700 2550
+Wire Wire Line
+	4500 2650 4500 3000
+Wire Wire Line
+	4500 3000 5200 3000
+Wire Wire Line
+	4350 2750 4350 3100
+Wire Wire Line
+	4350 3100 5200 3100
+Wire Wire Line
+	2500 2850 4200 2850
+Wire Wire Line
+	4200 2850 4200 3200
+Wire Wire Line
+	4200 3200 5200 3200
+Wire Wire Line
+	750  750  5700 750 
+Wire Wire Line
+	5700 3500 5700 5700
+Wire Wire Line
+	2600 5700 5700 5700
+Wire Wire Line
+	6200 2200 6200 1150
+Wire Wire Line
+	10500 1150 10500 1200
+Wire Wire Line
+	6200 1150 10500 1150
+Wire Wire Line
+	10500 1300 6350 1300
+Wire Wire Line
+	6350 1300 6350 2300
+Wire Wire Line
+	6350 2300 6200 2300
+Wire Wire Line
+	6500 1400 6500 2400
+Wire Wire Line
+	6500 2400 6200 2400
+Wire Wire Line
+	6500 1400 10500 1400
+Wire Wire Line
+	10500 1500 6650 1500
+Wire Wire Line
+	6650 1500 6650 2500
+Wire Wire Line
+	6650 2500 6200 2500
+$Comp
+L 74xx:74LS04 Inverter
+U 1 1 5CD63C35
+P 2200 3850
+F 0 "Inverter" V 2246 3670 50  0000 R CNN
+F 1 "74LS04" V 2155 3670 50  0000 R CNN
+F 2 "" H 2200 3850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 2200 3850 50  0001 C CNN
+	1    2200 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 74xx:74LS04 Inverter
+U 2 1 5CD64805
+P 2650 3850
+F 0 "Inverter" V 2696 3670 50  0000 R CNN
+F 1 "74LS04" V 2605 3670 50  0000 R CNN
+F 2 "" H 2650 3850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 2650 3850 50  0001 C CNN
+	2    2650 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 74xx:74LS04 Inverter
+U 3 1 5CD64A6D
+P 3150 3900
+F 0 "Inverter" V 3196 3720 50  0000 R CNN
+F 1 "74LS04" V 3105 3720 50  0000 R CNN
+F 2 "" H 3150 3900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 3150 3900 50  0001 C CNN
+	3    3150 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 74xx:74LS04 Inverter
+U 4 1 5CD65492
+P 3700 3900
+F 0 "Inverter" V 3746 3720 50  0000 R CNN
+F 1 "74LS04" V 3655 3720 50  0000 R CNN
+F 2 "" H 3700 3900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 3700 3900 50  0001 C CNN
+	4    3700 3900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1100 3700 2000 3700
+Wire Wire Line
+	2000 3700 2000 4200
+Wire Wire Line
+	2000 4200 2200 4200
+Wire Wire Line
+	2200 4200 2200 4150
+Connection ~ 1100 3700
+Wire Wire Line
+	1100 3800 1950 3800
+Wire Wire Line
+	1950 3800 1950 4300
+Wire Wire Line
+	1950 4300 2650 4300
+Wire Wire Line
+	2650 4300 2650 4150
+Connection ~ 1100 3800
+Wire Wire Line
+	1100 3900 1900 3900
+Wire Wire Line
+	1900 3900 1900 4400
+Wire Wire Line
+	1900 4400 3150 4400
+Wire Wire Line
+	3150 4400 3150 4200
+Connection ~ 1100 3900
+Wire Wire Line
+	1100 4000 1800 4000
+Wire Wire Line
+	1800 4000 1800 4450
+Wire Wire Line
+	1800 4450 3700 4450
+Wire Wire Line
+	3700 4450 3700 4200
+Connection ~ 1100 4000
+Wire Wire Line
+	2300 2650 3150 2650
+Wire Wire Line
+	3700 3600 3700 2550
+Connection ~ 3700 2550
+Wire Wire Line
+	3700 2550 4600 2550
+Wire Wire Line
+	3150 2650 3150 3600
+Connection ~ 3150 2650
+Wire Wire Line
+	3150 2650 4500 2650
+Connection ~ 3150 3600
+Wire Wire Line
+	3150 3600 3150 3700
+Wire Wire Line
+	2650 2750 2650 3550
+Wire Wire Line
+	2400 2750 2650 2750
+Connection ~ 2650 2750
+Wire Wire Line
+	2650 2750 4350 2750
+Connection ~ 2650 3550
+Wire Wire Line
+	2650 3550 2650 3650
+Wire Wire Line
+	2200 3150 2200 3550
+Connection ~ 2200 3150
+Wire Wire Line
+	2200 3150 2500 3150
+Connection ~ 2200 3550
+Wire Wire Line
+	2200 3550 2200 3700
+Wire Wire Line
+	2600 5800 5700 5800
+Wire Wire Line
+	5700 5800 5700 5700
+Connection ~ 5700 5700
+Wire Wire Line
+	2600 5900 5700 5900
+Wire Wire Line
+	5700 5900 5700 5800
+Connection ~ 5700 5800
+$Comp
+L power:VCC #PWR?
+U 1 1 5CD1E4E0
+P 750 700
+F 0 "#PWR?" H 750 550 50  0001 C CNN
+F 1 "VCC" H 767 873 50  0000 C CNN
+F 2 "" H 750 700 50  0001 C CNN
+F 3 "" H 750 700 50  0001 C CNN
+	1    750  700 
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
